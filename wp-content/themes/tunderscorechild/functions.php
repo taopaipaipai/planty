@@ -1,10 +1,9 @@
 <?php
 
 function theme_enqueue_styles(){
-    // Chargement du style.css du thème parent Twenty Twenty
-    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+    // Chargement du style.css du thème parent 
+    // wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');  apres test cette ligne fout le bordel et ajouter du CSS que je ne veux pas donc je vire !!
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
-
 }
 
 // Action qui permet de charger des scripts dans notre thème
@@ -86,6 +85,8 @@ function tunderscorechild_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'tunderscorechild' ),
+			'menu-2' => esc_html__( 'Secondaire', 'tunderscorechild' ),  // ligne ajoutée le 21/06/2023 21:40:53
+			'menu-3' => esc_html__( 'Terciaire', 'tunderscorechild' ),   // ligne ajoutée le 22/06/2023 18:17:18
 		)
 	);
 

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * The template for displaying the footer
  *
@@ -11,12 +11,22 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
+	<footer>
 
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-2',
+					'container'      => 'false',
+					'menu_class'     => 'cssFooter',
+				)
+			);
+			?>
 
-<?php wp_footer(); ?>
+	</footer> 
+</div> 
+
+<?php wp_footer(); ?>  <!-- à quoi sert cette ligne ??? Zou le 21/06/2023 22:10:00 --->
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * The header for our theme
  *
@@ -20,20 +20,32 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body class="mainContainer">
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<header id="masthead" class="site-header">
+	<header >
+		
+	 <div class="ContenaireHeader">
+	 	<div >	
+			 <?php the_custom_logo();?>
+		</div>
+			
+		<nav class="menuNavigation">
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tunderscore' ); ?></button>
 			<?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
+					'container'      => 'false',
+					'menu_class'     => 'cssHeader',
 				)
 			);
 			?>
+
+			<div class="DivCommander">	
+			   <a href="http://localhost/planty5/commander/" class="LienCommander"> Commander </a>
+			</div>
+	 </div>
+	 
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

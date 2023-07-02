@@ -3,32 +3,5 @@
 
 body * {
     font-family: 'Syne', sans-serif;     /* on applique la font "Syne" sur tous les éléments de la page */
-    background-color: antiquewhite;
-}
-
-/* On applique un gris plus clair sur les paragraphes */
-p {
-    color: #313332;
-}
-/* La classe 'hover-effect' permettra de créer un effet de zoom quand l'on passera la souris par dessus les elements images enfants  */
-.hover-effect img {
-    transition: all 0.33s ease-in-out;
-    transform: scale(1) translateY(0px);
-}
-.hover-effect img:hover {
-    transition: all 0.33s ease-in-out;
-    transform: scale(1.05) translateY(-10px);
-}
-
-
-/* PLANTY */
-
-#LogoPLANTY {
-position: absolute;
-left: 0%;
-right: 4.67%;
-top: 0.1%;
-bottom: 0.61%;
-
-background: #DC9F96;
+    /* background-color: #ECE2DA;*/
 }

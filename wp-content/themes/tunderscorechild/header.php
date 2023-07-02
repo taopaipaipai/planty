@@ -43,7 +43,7 @@
 			?>
 
 			<div class="DivCommander">	
-			   <a href="http://localhost/planty5/commander/" class="LienCommander"> Commander </a>
+			   <a href="http://localhost/planty6/commander/" class="LienCommander"> Commander </a>
 			</div>
 	 </div>
 	 

@@ -10,26 +10,18 @@ function theme_enqueue_styles(){
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 
-// notre premier shortcode
-function my_shortcode ($atts) {
-$a = shortcode_atts (array(
-    'nom' => 'valeur1',
-    'mot' => 'valeur2',
- 'number' => 'valeur3',
-), $atts);
+// Le hook pour ajouter le lien admin dans le menu
 
-$contenu = "<div>
+add_filter( 'wp_nav_menu_items', 'menu_admin', 10, 2 );
 
-<h3> voici les infos sur l'auteur " .$a['number']." : </h3>
-<p> Nom de l'auteur : ".$a['nom']."</p>
-<p> le mot de l'auteur : ".$a['mot']."</p>
-
-</div>";
-return $contenu ;
+function menu_admin ( $menu_items, $args ) {
+   if ($args->theme_location == 'menu-1') {
+      if (is_user_logged_in()) {
+         $menu_items .= '<li><a href="http://localhost/planty5/admin/">'. __("admin") .'</a></li>';
+      }
+   }
+   return $menu_items;
 }
-
-add_shortcode ('zzmetas','my_shortcode');
-
 
 ///// SEPARATION 1 ///////
 

@@ -26,7 +26,5 @@
 	</footer> 
 </div> 
 
-<?php wp_footer(); ?>  <!-- à quoi sert cette ligne ??? Zou le 21/06/2023 22:10:00 --->
-
 </body>
 </html>

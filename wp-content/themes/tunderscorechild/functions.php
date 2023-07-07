@@ -9,15 +9,13 @@ function theme_enqueue_styles(){
 // Action qui permet de charger des scripts dans notre thème
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
-
 // Le hook pour ajouter le lien admin dans le menu
-
 add_filter( 'wp_nav_menu_items', 'menu_admin', 10, 2 );
 
 function menu_admin ( $menu_items, $args ) {
    if ($args->theme_location == 'menu-1') {
       if (is_user_logged_in()) {
-         $menu_items .= '<li><a href="http://localhost/planty5/admin/">'. __("admin") .'</a></li>';
+         $menu_items .= '<li><a href="http://localhost/planty6/admin/">'. __("admin") .'</a></li>';
       }
    }
    return $menu_items;

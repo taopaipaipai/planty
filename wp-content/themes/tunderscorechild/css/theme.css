@@ -109,12 +109,15 @@ a {
   font-size: 20px;
  }
 
-.lesGouts{
+.lesGouts {
   font-weight: 800;
   color: #D2776A;
   text-align: center;
-  size: 30px;
   font-size: 58px;
+}
+
+.textlesGouts {
+  text-align: center;
 }
 
 /* page nous rencontrer */
@@ -148,7 +151,6 @@ a {
 .paragropheZz {
   width: 100%;
   height: 0;
-  align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,21 +252,19 @@ a {
 
 }
 
-.FleursousFormulaire { 
+.FleursousFormulaire {
   width: 100%;
   height: 200px;
-  padding-bottom: 11.25%; 
+  padding-bottom: 11.25%;
   background-image: url('http://localhost/planty6/wp-content/uploads/2023/07/Group-16.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center; 
+  background-position: center;
   position: relative;
-  /*top: 582px; */
   top: -214px;
   left: -174px;
   z-index: -1;
 }
-
 
 .ContenaireFormulaireZz {
   display: flex;
@@ -274,19 +274,15 @@ a {
   align-items: center;
 }
 
-/* technique de Nora tuto : https://noracheikh.com/personnaliser-contact-form-7-css/ */
-#wpcf7-f371-p470-o1 .wpcf7-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 40px 0;
-    width: 10%;
-}
 
 /* formulaireCF7 */
 
 .wpcf7-submit {
  background: #DC9F96;
  color: white;
+}
+
+#wpcf7-f371-p89-o1 .wpcf7-submit {
  width: 50%;
  height: 50px;
  font-size: 20px;
@@ -312,7 +308,6 @@ a {
 .Commander {
   width: 100%;
   height: 0;
-  align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,6 +385,7 @@ a {
   font-size: 20px;
   border-radius: 2%;
   border: none;
+  margin-left: 60%;
 }
 
 .TextVotreCommande {
@@ -629,15 +625,18 @@ a {
   padding-bottom: 10px;
 }
 
+.paddingueBottom3 {
+  padding-bottom: 110px;
+}
+
 .bouteilleFooter {
   width: 100%;
   height: 50%;
-  /*padding-bottom: 11.25%;*/
   padding-bottom: 8.6%;
   background-image: url('http://localhost/planty6/wp-content/uploads/2023/07/bouteille-multiple.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
+  background-position: center;
 }
 
 .bouteilleBienvenudos {
@@ -647,11 +646,10 @@ a {
   padding-bottom: 1.25%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
+  background-position: center;
 }
 
-/* Début :
-   Page Home Section --> CE QU’ILS EN PENSENT */
+/* Début : Page Home Section --> CE QU’ILS EN PENSENT */
 
 .grid-container {
     display: grid;
@@ -665,13 +663,12 @@ a {
     column-gap: 24px;
   }
 
-  .image-box,{
+  .image-box {
     display: flex;
     margin: 0 40px;
   }
 
   .text-box {
-  	display: flex;
     display: grid;
     grid-template-rows: 1fr 1fr;
   }
@@ -792,7 +789,6 @@ a {
 		}
 
 		#wpcf7-f443-p212-o1 .wpcf7-submit {
-		  width: 80%;
 		  margin: 10px;
 		}
 
@@ -889,138 +885,117 @@ a {
 		.textPENSENT {
 		  width: 100%;
 		  font-size: 30px;
-		 }
+		}
 
-	 .NRJPlantes {
-	  width: 100%;
-	  font-size: 20px;
-	 }
+	  .NRJPlantes {
+	    width: 100%;
+	    font-size: 20px;
+	  }
 
 		.PlantyText  {
 		  width: 100%;
 		  font-size: 15px;
-		 }
+		}
 
-	 .grille {
-	  grid-template-columns: repeat(auto-fill, 100%);
-	  max-width: 100%;
- 	 }
+	  .grille {
+	    grid-template-columns: repeat(auto-fill, 100%);
+	    max-width: 100%;
+ 	  }
 
-	 .grid-item {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- 	}
+	  .grid-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+ 	  }
 
-	.imageFruit {
-	  height: 163px;
-	  width: 200px;
-	}
+	  .imageFruit {
+	    height: 163px;
+	    width: 200px;
+	  }
 
-	.TailleImage {
-	  width : 100px;
-	  height: 75px;
-	}
+	  .TailleImage {
+	    width : 100px;
+	    height: 75px;
+	  }
 
 		.NousRENCONTRER {
 		  padding-top: 50px;
 		}
 
-  .textNousRENCONTRER {
+    .textNousRENCONTRER {
 		  font-size: 20px;
 		  height: 50px;
     }
 
-	.textparagrapheNousRENCONTRER {
-	  font-size: 10px;
-	  margin-top: 10px;
-	}
+	  .textparagrapheNousRENCONTRER {
+	    font-size: 10px;
+	    margin-top: 10px;
+	  }
 
-	.formulaireCF7NousRencontrer,
-	.formulaireCF7NousRencontrer2 {
-	  width: 80%;
-	}
+	  .formulaireCF7NousRencontrer,
+	  .formulaireCF7NousRencontrer2 {
+	    width: 80%;
+	  }
 
-	#wpcf7-f371-p89-o1 .wpcf7-form {
-	  margin-left: 90px ;
-	}
+	  #wpcf7-f371-p89-o1 .wpcf7-form {
+	    margin-left: 90px ;
+	  }
 
-	.wpcf7-submit {
-	 width: 50%;
-	 margin-left: 20%;
-	}
+	  #wpcf7-f371-p89-o1 .wpcf7-submit {
+	    margin-left: 20%;
+	  }
 
-	.FleursousFormulaire { 
-	  width: 100%;
-	  height: 150px;
-	  padding-bottom: 11.25%; 
-	  background-image: url('http://localhost/planty6/wp-content/uploads/2023/07/Group-16.png');
-	  background-repeat: no-repeat;
-	  background-size: contain;
-	  background-position: center; 
-	  position: relative;
-	  /*top: 582px; */
-	  top: -175px;
-	  left: -130px;
-	  z-index: -1;
-	}
-
-
-}
+	  .FleursousFormulaire {
+	    height: 150px;
+	    top: -175px;
+	    left: -130px;
+	  }
+  }
 
   @media (max-width: 250px) {
 
   	/* Page Home Section --> CE QU’ILS EN PENSENT */
     .grid-container {
-      grid-template-columns: 1fr;
+       grid-template-columns: 1fr;
     }
 
-    .box {
-      flex-direction: column;
-    }
+     .box {
+       flex-direction: column;
+     }
 
    /* la page Nous rencontrer */
-  .FlexLEquipe {
-      flex-direction: column;
-    }
+     .FlexLEquipe {
+       flex-direction: column;
+     }
 
-  .textNousRENCONTRER {
-		  font-size: 15px;
-		  height: 70px;
-		  margin-top: 10px;
-    }
+     .textNousRENCONTRER {
+		   font-size: 15px;
+		   height: 70px;
+		   margin-top: 10px;
+     }
 
-	.formulaireCF7NousRencontrer,
-	.formulaireCF7NousRencontrer2 {
-	  width: 70%;
-	}
+	   .formulaireCF7NousRencontrer,
+	   .formulaireCF7NousRencontrer2 {
+	     width: 70%;
+	   }
 
 		/* page Home Planty */
-		.BoissonENERGISSANTE,
-		.lesGouts,
-		.textPENSENT {
-		  font-size: 20px;
+		 .BoissonENERGISSANTE,
+		 .lesGouts,
+		 .textPENSENT,
+	   .TextSaisieCommande,
+	   .TextVotreCommande {
+		   font-size: 20px;
 		 }
 
-	.textCommander {
-	  font-size: 15px;
-	}
+	   .textCommander {
+	     font-size: 15px;
+	   }
 
-	.TextSaisieCommande,
-	.TextVotreCommande {
-	  font-size: 20px;
-	}
+	   .saisieCommander {
+	     width: 50px;
+	     font-size: 15px;
+	   }
+  }
 
-	.saisieCommander {
-	  width: 50px;
-	  font-size: 15px;
-	}
-}
-
-
-.bordureRose {
-  /* bord: largeur type couleur;  le type peut être : solid ou dashed ou dotted ou etc... */
-      border: 2px solid pink;
-      height:40px;
-}

@@ -15,7 +15,7 @@ add_filter( 'wp_nav_menu_items', 'menu_admin', 10, 2 );
 function menu_admin ( $menu_items, $args ) {
    if ($args->theme_location == 'menu-1') {
       if (is_user_logged_in()) {
-         $menu_items .= '<li><a href="http://localhost/planty6/admin/">'. __("admin") .'</a></li>';
+         $menu_items .= '<li><a href="http://localhost/planty6/admin/">'. __("Admin") .'</a></li>';
       }
    }
    return $menu_items;

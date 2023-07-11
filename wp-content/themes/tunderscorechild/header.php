@@ -45,7 +45,7 @@
 			<div class="DivCommander">	
 			   <a href="http://localhost/planty6/commander/" class="LienCommander"> Commander </a>
 			</div>
-	 </div>
 	 
 		</nav><!-- #site-navigation -->
+	 </div>
 	</header><!-- #masthead -->
